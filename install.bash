@@ -8,4 +8,4 @@ cd nginx-1.9.15
 ./configure --with-http_ssl_module --add-module=../nginx-rtmp-module-master
 make
 sudo make install
-sudo /usr/local/nginx/sbin/nginx
+echo "rtmp {\n\tserver {\n\t\tlisten 1935;\n\t\tchunk_size4096\n\t\tapplication live{\n\t\t\tlive on;\n\t\t\tecord off;\n\t\t}\n\t}\n}" >> /usr/local/nginx/conf/nginx.conf
