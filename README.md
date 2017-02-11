@@ -4,5 +4,5 @@ To install run:
 ```C
 ./install.bash
 ```
-Once installed, run ```C ./start.bash ``` to start the server.
-```C ./stop.bash``` is run to stop the server and ```C ./restart.bash``` is used to resart the server.
+Once installed, run ```./start.bash ``` to start the server.
+```./stop.bash``` is run to stop the server and ```./restart.bash``` is used to resart the server.
